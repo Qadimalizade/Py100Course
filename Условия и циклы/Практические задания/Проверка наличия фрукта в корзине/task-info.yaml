@@ -3,16 +3,17 @@ files:
   - name: main.py
     visible: true
     placeholders:
-      - offset: 169
-        length: 56
+      - offset: 168
+        length: 73
         placeholder_text: "...)  # TODO проверить наличие искомого фрукта в корзине"
         initial_state:
           length: 56
           offset: 169
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
         encrypted_possible_answer: search_fruit in cart)
+        selected: false
+        status: Solved
+        is_visible: false
     text: |
       cart = {  # корзина с фруктами
           "Яблоко": 2,
@@ -31,5 +32,8 @@ files:
     text: |
       Персик есть в корзине с фруктами? False
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 21 Mar 2024 18:17:47 UTC"
 record: -1

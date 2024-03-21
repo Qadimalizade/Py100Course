@@ -3,18 +3,19 @@ files:
   - name: main.py
     visible: true
     placeholders:
-      - offset: 17
+      - offset: 72
         length: 26
         placeholder_text: '# TODO распечатать лесенку'
         initial_state:
           length: 26
           offset: 17
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
         encrypted_possible_answer: |-
           for i in range(count_stairs, 0, -1):
               print("*" * i)
+        selected: false
+        status: Solved
+        is_visible: false
     text: |
       count_stairs = 4
       # TODO распечатать лесенку
@@ -30,5 +31,8 @@ files:
       **
       *
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 21 Mar 2024 19:41:39 UTC"
 record: -1
