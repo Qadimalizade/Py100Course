@@ -4,25 +4,27 @@ files:
     visible: true
     placeholders:
       - offset: 11
-        length: 3
+        length: 2
         placeholder_text: '...'
         initial_state:
           length: 3
           offset: 11
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
         encrypted_possible_answer: or
-      - offset: 61
+        selected: false
+        status: Solved
+        is_visible: false
+      - offset: 60
         length: 3
         placeholder_text: '...'
         initial_state:
           length: 3
           offset: 61
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
         encrypted_possible_answer: and
+        selected: false
+        status: Solved
+        is_visible: false
     text: |
       print(True ... False)  # ожидаемый результат True
       print(True ... False)  # ожидаемый результат False
@@ -36,5 +38,8 @@ files:
       True
       False
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 21 Mar 2024 06:20:44 UTC"
 record: -1

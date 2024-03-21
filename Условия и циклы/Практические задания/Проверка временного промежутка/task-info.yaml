@@ -24,5 +24,8 @@ files:
     text: |
       Вечер
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Thu, 21 Mar 2024 16:43:32 UTC"
 record: -1
