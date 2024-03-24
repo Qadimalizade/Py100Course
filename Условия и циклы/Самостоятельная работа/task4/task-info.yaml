@@ -4,24 +4,23 @@ files:
     visible: true
     placeholders:
       - offset: 0
-        length: 39
+        length: 19
         placeholder_text: '# TODO завести счетчик для произведения'
         initial_state:
           length: 39
           offset: 0
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
         encrypted_possible_answer: mul = 1
-      - offset: 40
-        length: 35
+        selected: false
+        status: Solved
+        is_visible: false
+      - offset: 20
+        length: 76
         placeholder_text: '# TODO посчитать произведение чисел'
         initial_state:
           length: 35
           offset: 40
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
         encrypted_possible_answer: |-
           last_number = 10
           
@@ -29,6 +28,9 @@ files:
               mul *= number
           
           print(mul)
+        selected: false
+        status: Solved
+        is_visible: false
     text: |
       # TODO завести счетчик для произведения
       # TODO посчитать произведение чисел
@@ -41,5 +43,8 @@ files:
     text: |
       3628800
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Sun, 24 Mar 2024 19:54:07 UTC"
 record: -1
