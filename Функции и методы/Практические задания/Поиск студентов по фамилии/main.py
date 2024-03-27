@@ -1,5 +1,12 @@
 def exists_student_by_lastname(students, lastname):
-    ...  # TODO Напишите проверку студента с заданной фамилией
+    for student in students:
+        if lastname is student['фамилия']:
+            return True
+        else:
+            return False
+
+
+# TODO Напишите проверку студента с заданной фамилией
 
 
 students_list = [
