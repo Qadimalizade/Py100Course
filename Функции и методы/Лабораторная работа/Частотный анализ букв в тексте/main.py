@@ -1,20 +1,32 @@
+#from collections import Counter
+#def count_letters(text):
+#    text_lower = text.lower()
+#    alphabet = dict()
+#    for letter in text_lower:
+#        if letter.isalpha():
+#            c = Counter(text_lower)
+#     return (c)
 def count_letters(text):
     text_lower = text.lower()
     alphabet = dict()
     for letter in text_lower:
         if letter.isalpha():
-            if letter is not dict:
-                alphabet.setdefault(letter, 1)
+            if letter not in alphabet:
+                alphabet[letter] = 1
             else:
-                alphabet[letter] = alphabet.get(letter)+1
-    return (alphabet)
-
-
-def calculate_frequency(alphabet):
-    for i in alphabet:
-        alphabet[i] = alphabet.get[i]/ len(alphabet)
+                alphabet[letter] += 1
     return alphabet
 
+
+#def calculate_frequency(alphabet_2):
+#    for a, b, in alphabet_2.items():
+#        alphabet_2[a] = round((alphabet_2[a]/ len(alphabet_2)),2)
+#    return alphabet_2
+def calculate_frequency(alphabet_2):
+    total_count = sum(alphabet_2.values())
+    for a, b, in alphabet_2.items():
+        alphabet_2[a] = (alphabet_2[a]/ total_count)
+    return alphabet_2
 
 
 main_str = """
@@ -55,6 +67,13 @@ main_str = """
 
 # TODO Распечатайте в столбик букву и её частоту в тексте
 dict_1 = count_letters(main_str)
-print(dict_1)
 dict_2 = calculate_frequency(dict_1)
-print(dict_2)
+#print(dict_1)
+#print(dict_2)
+# dict_3 = {k: v for v, k in dict_2.items()}
+for key, value in dict_2.items():
+    print(f'{key}: {value:.2f}')
+# result = '\n'.join(f'{v}: {k}' for k, v in dict_2.items())
+# print(result)
+
+#частота высчитывается некорректно

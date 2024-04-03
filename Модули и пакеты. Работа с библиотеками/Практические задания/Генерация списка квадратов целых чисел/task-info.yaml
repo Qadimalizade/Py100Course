@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 111
-        length: 127
+        length: 80
         placeholder_text: |-
           # TODO заменить на list comprehension
               squares = []
@@ -15,9 +15,10 @@ files:
           length: 127
           offset: 111
         initialized_from_dependency: false
+        encrypted_possible_answer: "return [i ** 2 for i in range(n+1)]"
         selected: false
         status: Unchecked
-        encrypted_possible_answer: "return [i ** 2 for i in range(n+1)]"
+        is_visible: false
     text: |
       def generate_squares(n):
           """

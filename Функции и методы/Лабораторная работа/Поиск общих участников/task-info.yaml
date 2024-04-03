@@ -20,7 +20,7 @@ files:
           
               return common_participants
         selected: false
-        status: Failed
+        status: Solved
         is_visible: false
       - offset: 47
         length: 1
@@ -33,7 +33,7 @@ files:
           participants = find_common_participants(participants_first_group, participants_second_group)
           print("Общие участники:", participants)
         selected: false
-        status: Failed
+        status: Solved
         is_visible: false
     text: |
       # TODO Напишите функцию find_common_participants
@@ -119,9 +119,9 @@ files:
   - name: tests/__init__.py
     visible: false
     learner_created: false
-status: Failed
+status: Solved
 feedback:
-  message: "Убедитесь, что функция `find_common_participants` возвращает список."
-  time: "Sat, 30 Mar 2024 23:31:28 UTC"
+  message: Congratulations!
+  time: "Wed, 03 Apr 2024 16:56:19 UTC"
 record: -1
 solution_hidden: true
