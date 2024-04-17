@@ -27,3 +27,5 @@ if os.path.exists(full_path):
     print("Список файлов и директорий в директории \"data\":", data_files)
 else:
     print("Директория \"data\" не существует.")
+
+relative_path = "data1"
