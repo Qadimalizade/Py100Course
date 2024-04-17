@@ -2,6 +2,7 @@
 import os
 import csv
 import json
+import pickle
 
 INPUT_FILENAME = "input.csv"
 OUTPUT_FILENAME = "output.json"
@@ -10,13 +11,16 @@ OUTPUT_FILENAME = "output.json"
 
 
 def task() -> None:
+
     with open(INPUT_FILENAME) as file:
-        reader = csv.DictReader(file,delimiter=',')
-        for row in reader:
-            print(row)  # TODO считать содержимое csv файла
+        reader = csv.DictReader(file, delimiter=',')
+        # for row in reader:
+        #     print(row)  # TODO считать содержимое csv файла
         with open(OUTPUT_FILENAME, 'w') as f:
-            json_string = json.dumps(INPUT_FILENAME, indent=4)
-        return json_string
+            # json_string = json.dumps(list(reader), indent=4)
+            # f.write(json_string)
+            json.dump(list(reader), f, indent=4)
+        # return json_string
 
 
 
