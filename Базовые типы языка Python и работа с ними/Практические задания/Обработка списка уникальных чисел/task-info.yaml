@@ -4,7 +4,7 @@ files:
     visible: true
     placeholders:
       - offset: 82
-        length: 209
+        length: 463
         placeholder_text: |-
           # TODO найти сумму, количество и среднее арифметическое уникальных чисел
           
@@ -15,8 +15,6 @@ files:
           length: 209
           offset: 82
         initialized_from_dependency: false
-        selected: false
-        status: Unchecked
         encrypted_possible_answer: |-
           unique_numbers = set(list_)
           
@@ -30,6 +28,9 @@ files:
               "Среднее арифметическое уникальных чисел:": average_of_numbers,
           }
           print(describe)
+        selected: false
+        status: Solved
+        is_visible: false
     text: |
       list_ = [8, 9, -5, -3, 1, -10, 8, -10, -5, 0, 5, -4, 0, 10, -8, 1, 6, -6, 6, -9]
       
@@ -47,6 +48,9 @@ files:
     text: |
       {'Сумма уникальных чисел:': -6, 'Количество уникальных чисел:': 14, 'Среднее арифметическое уникальных чисел:': -0.42857}
     learner_created: false
-status: Unchecked
+status: Solved
+feedback:
+  message: Congratulations!
+  time: "Mon, 29 Apr 2024 15:32:34 UTC"
 record: -1
 solution_hidden: true
